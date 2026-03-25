@@ -10,15 +10,10 @@ use Illuminate\Support\Str;
 
 class AttendanceSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-
+ 
     public function run(): void
-    {
-        
+    {   
         DB::table('attendances')->insert([
-
 
             'employee_id' => 1, 
             'check_in'    => '2026-03-24 08:00:00', 

@@ -15,7 +15,7 @@ class EmployeeSeeder extends Seeder
         DB::table('attendances')->insert([
 
             'user_id' => 2, 
-            'status'    => 'hi', 
+            'status'  => 'hi', 
             
         ]);
     }
