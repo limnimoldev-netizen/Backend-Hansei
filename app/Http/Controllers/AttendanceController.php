@@ -2,19 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Attendance;
-use Illuminate\Database\Seeder;
-
+use Illuminate\Http\Request;
+use App\Models\Attendance; 
 
 class AttendanceController extends Controller
 {
-    //
-    public function show()
+    public function index()
     {
-        $attendances = Attendance::all();
-        return response()->json($attendances);
+
+        return 'Hello attendance';
+
     }
-
-    
 }
-

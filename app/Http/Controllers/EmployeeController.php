@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Employee;
+use Illuminate\Http\Request;
+use App\Models\Employee; 
+
 
 class EmployeeController extends Controller
 {
-    public function show()
+    
+    public function index()
     {
-        $employee = Employee::all();
-        return response()->json($employee);
-    }
+        
+        return 'Hello Employee';
 
+    }
 }

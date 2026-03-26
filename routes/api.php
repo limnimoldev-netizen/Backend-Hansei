@@ -3,8 +3,18 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\AttendanceController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\PositionController;
 
-Route::get('/employees', [EmployeeController::class, 'show']);
+
+Route::get('/employee/{id}', [EmployeeController::class, 'index']);
+Route::get('/attendance/{id}', [AttendanceController::class, 'index']);
+Route::get('/department/{id}', [DepartmentController::class, 'index']);
+Route::get('/position/{id}', [PositionController::class, 'index']);
+
+
+
 
 
 Route::get('/user', function (Request $request) {

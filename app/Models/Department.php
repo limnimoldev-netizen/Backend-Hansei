@@ -8,17 +8,19 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Department extends Model
 {
-   protected $table = 'attendances';
+   protected $table = 'departments';
 
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        
         'name'
     ];
 
-    public function department(): HasMany
+    public function users(): HasMany
     {
-        return $this->HasMany(Attendance::class);
+        return $this->hasMany(User::class);
     }
 }
+
+
+

@@ -2,21 +2,22 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+
 
 class PositionSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+    
+    
      public function run(): void
     
     {
-        DB::table('users')->insert([
-            
-            'name' => Str::random(10),
+        DB::table('positions')->insert([
+               
+            'name' => 'hiih',
             
         ]);
     }
