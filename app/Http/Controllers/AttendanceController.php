@@ -10,7 +10,10 @@ class AttendanceController extends Controller
     public function index()
     {
 
-        return 'Hello attendance';
+        return Attendance::all();
 
     }
+
+
+    
 }

@@ -14,7 +14,10 @@ return new class extends Migration
         Schema::create('attendances', function (Blueprint $table) {
             
             $table->id();
-            $table->string('employee_id');
+           
+            $table->unsignedBigInteger('employee_id');
+            $table->foreign('employee_id')->references('id')->on('employees');
+            
             $table->dateTime('check_in');
             $table->dateTime('check_out');
             $table->string('work_hour');

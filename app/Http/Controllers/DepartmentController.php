@@ -12,8 +12,9 @@ class DepartmentController extends Controller
 
     public function index()
     {
-        
-        return 'Hello Department';
+
+        return Department::all();
+
 
     }
 }

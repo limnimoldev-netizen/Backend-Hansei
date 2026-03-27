@@ -4,8 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+
 
 
 class AttendanceSeeder extends Seeder
@@ -20,8 +19,7 @@ class AttendanceSeeder extends Seeder
             'check_out'   => '2026-03-24 17:00:00',
             'work_hour'   => '9',
             'reason'      => 'Regular shift',
-            'created_at'  => now(),
-            'updated_at'  => now(),
+            
         ]);
     }
 }

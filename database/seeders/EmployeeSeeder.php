@@ -18,11 +18,11 @@ class EmployeeSeeder extends Seeder
             
             'user_id'    => 1, 
             'status'     => 'active', 
-            'created_at' => now(),
-            'updated_at' => now(),
-            
-            
+                 
         ]);
     }
-}
+} 
+
+
+
 
