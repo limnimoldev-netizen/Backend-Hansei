@@ -11,19 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
+        
         Schema::create('attendances', function (Blueprint $table) {
-            
             $table->id();
-           
+
             $table->unsignedBigInteger('employee_id');
-            $table->foreign('employee_id')->references('id')->on('employees');
-            
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+
             $table->dateTime('check_in');
             $table->dateTime('check_out');
-            $table->string('work_hour');
-            $table->text('reason');
+            $table->decimal('work_hour', 5, 2); 
+            $table->text('reason')->nullable();
             $table->timestamps();
-            
         });
     }
 

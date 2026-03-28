@@ -12,7 +12,7 @@ class PositionController extends Controller
     public function index()
     {
         
-        return 'Hello Position';
+        return Position::all();
 
     }
 }
