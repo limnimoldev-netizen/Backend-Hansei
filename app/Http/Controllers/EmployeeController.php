@@ -14,6 +14,5 @@ class EmployeeController extends Controller
         
         return Employee::all();
 
-
     }
 }

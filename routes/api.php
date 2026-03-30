@@ -27,3 +27,8 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+use App\Models\Employee;
+
+Route::get('/employees', function () {
+    return Employee::all(); 
+});
